@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awais Portfolio</title>
+    <!-- Link to Tailwind CSS and icon library -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans bg-gray-100">
+    <div class="main">
+      <!-- Navigation bar -->
+      <div
+        class="nav flex justify-between items-center p-4 bg-gray-800 text-white"
+      >
+        <img class="logoimg w-16 h-16" src="./assets/logo.png" alt="Logo" />
+        <ul class="navlinks hidden md:flex space-x-6 text-lg font-medium">
+          <li class="hover:text-gray-400 cursor-pointer">Home</li>
+          <li class="hover:text-gray-400 cursor-pointer">About</li>
+          <li class="hover:text-gray-400 cursor-pointer">Contact</li>
+          <i class="ri-menu-3-line md:hidden text-2xl"></i>
+        </ul>
+      </div>
+
+      <!-- About Me Section -->
+      <div
+        class="aboutme flex flex-col md:flex-row justify-between items-center bg-gradient-to-r from-blue-500 to-cyan-500 p-8 md:p-16"
+      >
+        <div class="topcontent text-center md:text-left md:w-1/2">
+          <h1 class="font-bold text-4xl md:text-6xl mb-4">Awais Ahmad</h1>
+          <p class="text-sm md:text-lg text-gray-200">
+            Lorem ipsum dolor, odio ducimus deserunt odit voluptatem sapiente
+            sint architecto!
+          </p>
+        </div>
+        <img
+          src="./assets/WhatsApp Image 2024-05-29 at 5.49.23 PM.jpeg"
+          alt="Awais Ahmad"
+          class="img w-1/2 md:w-1/3 rounded-lg mt-4 md:mt-0"
+        />
+      </div>
+
+      <!-- Skills Section -->
+      <div
+        class="container py-16 bg-gradient-to-r from-gray-900 to-gray-700 text-white text-center"
+      >
+        <h1 class="text-4xl font-bold mb-12">Skills</h1>
+        <div
+          class="box-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8"
+        >
+          <!-- Individual Skill Box -->
+          <div class="box bg-white text-black rounded-lg p-6 shadow-lg">
+            <img src="./assets/html.png" alt="HTML" class="h-32 mx-auto mb-4" />
+            <h3 class="text-2xl font-semibold mb-2">HTML</h3>
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            </p>
+            <a
+              href="#"
+              class="btn mt-4 inline-block bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700"
+              >Learn more</a
+            >
+          </div>
+          <div class="box bg-white text-black rounded-lg p-6 shadow-lg">
+            <img src="./assets/css.png" alt="CSS" class="h-32 mx-auto mb-4" />
+            <h3 class="text-2xl font-semibold mb-2">CSS</h3>
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            </p>
+            <a
+              href="#"
+              class="btn mt-4 inline-block bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700"
+              >Learn more</a
+            >
+          </div>
+          <div class="box bg-white text-black rounded-lg p-6 shadow-lg">
+            <img
+              src="./assets/express.png"
+              alt="Express"
+              class="h-32 mx-auto mb-4"
+            />
+            <h3 class="text-2xl font-semibold mb-2">Express</h3>
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            </p>
+            <a
+              href="#"
+              class="btn mt-4 inline-block bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700"
+              >Learn more</a
+            >
+          </div>
+          <div class="box bg-white text-black rounded-lg p-6 shadow-lg">
+            <img
+              src="./assets/javascript1.png"
+              alt="JavaScript"
+              class="h-32 mx-auto mb-4"
+            />
+            <h3 class="text-2xl font-semibold mb-2">JavaScript</h3>
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            </p>
+            <a
+              href="#"
+              class="btn mt-4 inline-block bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700"
+              >Learn more</a
+            >
+          </div>
+          <div class="box bg-white text-black rounded-lg p-6 shadow-lg">
+            <img
+              src="./assets/mongodb.png"
+              alt="MongoDB"
+              class="h-32 mx-auto mb-4"
+            />
+            <h3 class="text-2xl font-semibold mb-2">MongoDB</h3>
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            </p>
+            <a
+              href="#"
+              class="btn mt-4 inline-block bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700"
+              >Learn more</a
+            >
+          </div>
+          <div class="box bg-white text-black rounded-lg p-6 shadow-lg">
+            <img
+              src="./assets/atom_9594472.png"
+              alt="React"
+              class="h-32 mx-auto mb-4"
+            />
+            <h3 class="text-2xl font-semibold mb-2">React</h3>
+            <p class="text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            </p>
+            <a
+              href="#"
+              class="btn mt-4 inline-block bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2024 Awais Ahmad. All Rights Reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>

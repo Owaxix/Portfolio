@@ -1,0 +1,150 @@
+Reset default styles * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+}
+
+/* Set main container dimensions */
+html main {
+  width: 100%;
+  height: 100%;
+}
+
+/* Navigation bar styling */
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 5fr;
+  background-color: rgb(73, 73, 73);
+}
+
+/* Logo image styling */
+.logoimg {
+  width: 60px;
+  height: 60px;
+}
+
+/* Navigation links styling */
+.navlinks {
+  list-style-type: none;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10%;
+  color: aliceblue;
+}
+
+/* Hide icons in unordered lists */
+ul i {
+  display: none;
+}
+
+/* Container styling */
+.contanier {
+  padding: 15px 9%;
+  padding-bottom: 50px;
+  display: grid;
+  background-image: linear-gradient(#1f1c2c, #928dab);
+}
+
+/* Container header styling */
+.contanier h1 {
+  font-family: "poppins";
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 0 1 15px rgba(141, 141, 141, 0.2);
+  font-size: 50px;
+}
+
+/* Box container styling */
+.Boxcontanier {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 50px 9%;
+  grid-gap: 20px;
+  text-align: center;
+}
+
+/* Box container images styling */
+.Boxcontanier img {
+  height: 200px;
+  padding: 30px;
+}
+
+/* Box title styling */
+.Boxcontanier .Box h3 {
+  font-family: "poppins";
+  color: #0f0f0f;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+
+/* Box paragraph styling */
+.Boxcontanier .Box p {
+  color: #1f1c2c;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Box button styling */
+.contanier .Boxcontanier .Box .btn {
+  margin-top: 10px;
+  display: inline-block;
+  background: #222222;
+  color: rgb(214, 213, 212);
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+}
+
+/* Individual box styling */
+.contanier .Boxcontanier .Box {
+  background-color: azure;
+  border-radius: 10px;
+}
+
+/* Responsive styling for screens <= 768px */
+@media (max-width: 768px) {
+  ul i {
+    display: block;
+  }
+  ul li {
+    display: none;
+  }
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 85%;
+    min-width: 460px;
+  }
+  .logoimg {
+    width: 50px;
+    height: 50px;
+  }
+  .nav i {
+    grid-template-columns: 1fr;
+    grid-column: 3;
+  }
+  .Boxcontanier {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(250px, auto);
+  }
+}
+
+/* Responsive styling for screens <= 500px */
+@media (max-width: 500px) {
+  ul i {
+    display: block;
+  }
+  ul li {
+    display: none;
+  }
+  .nav {
+    grid-template-columns: 1fr 1fr;
+    margin-right: 0;
+  }
+}
